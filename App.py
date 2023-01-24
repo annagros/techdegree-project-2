@@ -80,7 +80,8 @@ def main():
 			player_names = []
 			for player in team["players"]:
 				player_names.append(player["name"])
-			print("\nPlayers on Team: \n{}".format(player_names))
+			cleaned_players_in_team = ", ".join(player_names)
+			print("\nPlayers on Team: \n{}".format(cleaned_players_in_team))
 
 
 if __name__ == "__main__":
